@@ -1,0 +1,16 @@
+5.1 O comando cp ../temp-* é usado para copiar arquivos de um diretório para outro.
+    cp - é o comando para copiar arquivos e diretorios.
+    ../temp-*: .. - refere-se ao diretorio acima do diretorio atua.
+               temp-* - é um padrao que corresponde a todos os arquivos que começam com temp-, ou seja, este comando está a copiar todos os arquivos que começa com temp-.
+               Ou seja, este comando esta a copiar todos os tres arquivos que começam por temp- do diretório principal para o diretorio atual, sendo este o greends-fads-firts-project.
+               . - refere-se ao diretorio atual, assim os arquivos correspondentes seram copiados para o diretorio greends-fads-first-project.
+
+5.2 Nao se usou o git init, devido ao repositorio ter sido criado previamente quando se clonou o repositorio do GitHub.
+    O comando git clone já inicia um repositorio Git no diretório clonado, criando um diretorio .git e configura a conexão com o repositorio remoto (o fork que criei no GitHub).
+    Portanto, já estava num repositorio Git existente ao executar os comandos, como git add e git commit.
+
+5.3 Para confirmar que os arquivos estao copiados, uso o comando ls para listar os arquivos no diretorio atual (green-fads-first-project).
+    O ls irá mostrar que copiei os aquivos (temp-data.csv, temp-average.py, temp-doc.txt), listados junto com os outros aquivos que já estavam no repositorio clonado.
+    Para adicionar os arquivos copiados ao controlo de visão utilizei: git add temp-data.csv temp-average.py temp-doc.txt
+    Após adicionar os arquicos, confirmei as mudanças atraves do git commit -m "Adicionando arquivos copiados de temp-*"
+    A seguir aos passos acima, os arquivos copiados estao confirmados no repositorio Git local, onde verifico o status novamente com o git status para garantir que esta tudo em ordem.
